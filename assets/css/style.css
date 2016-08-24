@@ -1,0 +1,76 @@
+
+}
+
+h1{
+	background-color: blue;
+	color: black;
+	display:inline;
+	clear: both;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 5px #ddd;
+	alignment-baseline: central;
+}
+
+#wrapper {
+	width: 100%
+	max-width:960px;
+	margin: 0 auto;
+}
+
+#instructions {
+	vertical-align: middle;
+	background-color: #33cc33;
+	width: 50%;
+	clear:both;
+	padding: 25px;
+	margin-top: 20px;
+	border: inset 5px #ddd;
+}
+
+#guessingNumber {
+	background-color: green;
+	float: left;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 5px #ddd
+}
+
+#scoreboard {
+	background-color: #3399ff;
+	display: inline-block;
+	padding: 15px 20px 10px 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border: solid 5px #ddd
+
+}
+
+#crystals {
+	margin-top: 15px;
+	margin-bottom:26px;
+
+}
+
+.crystalImage {
+	height: 111px;
+	border: solid 1px #272525;
+	margin-left: 10px
+}
+
+.crystalImage:firstchild {
+	margin-left: 0px;
+
+}
+
+#totalScore {
+	margin-bottom: 50px;
+}
+
+#yts {
+	background: #009688;
+	display: inline;
+	padding: 20px;
+	border: solid 1px #ddd
+}
