@@ -7,7 +7,7 @@ $(document).ready(function() {
 	var losses = 0;
 	$('#win').text(wins);
 	$('#loss').text(losses);
-	
+
 	newCrystals();
 	newGame();
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 			  }
 			  if(!found)numbers[numbers.length]=randomnumber;
 			}
-		console.log(numbers);		
+		console.log(numbers);
 
 		for (i = 0; i < numbers.length; i++) {
 			var imageCrystal = $('<img>');
@@ -50,49 +50,50 @@ $(document).ready(function() {
 
 
  $('.crystalImage').on('click', function(){
-		  
+
 		  counter = counter + parseInt($(this).data('num'));
-		   
-		  
+
+
 		  $('#yourScore').text(counter);
 
-		  
+
 		  if (counter == numberToGuess){
-		    
+
 		    $('#status').text('You won!!!!');
-		    
+
 		    wins ++;
-		    
+
 		    $('#win').text(wins);
-		   
+
 		    console.log(wins)
-		    
+
 		    $('#crystals').empty();
-		    
+
 		    newCrystals();
-		    
+
 		    newGame();
-		        
-		  
+
+
 		  } else if ( counter > numberToGuess){
-		      
-		      ('#status').text('You lost!')
-		      
+          // You were missing the $ here in your jQuery selection
+		      $('#status').text('You lost!')
+
 		      losses ++;
-		      
+
 		      $('#loss').text(losses);
-		      
+
 		      console.log(losses)
-		      
+
 		      $('#crystals').empty();
-		      
+
 		      newCrystals();
-		      
+
 		      newGame();
-		   
+
 		   }
- 
- }); 
+
+ });
 }
 
-} 
+// you were missing a closing paren
+});
